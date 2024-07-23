@@ -1,0 +1,8 @@
+.cluster,
+.cluster.recursive > * {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--cluster-space);
+  justify-content: var(--cluster-justify, flex-start);
+  align-items: var(--cluster-align, flex-start);
+}

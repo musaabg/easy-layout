@@ -1,0 +1,12 @@
+.imposter {
+  position: var(--imposter-position, absolute);
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imposter.contain {
+  overflow: auto;
+  max-inline-size: calc(100% - (var(--imposter-margin, 0) * 2));
+  max-block-size: calc(100% - (var(--imposter-margin, 0) * 2));
+}

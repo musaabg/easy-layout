@@ -1,0 +1,13 @@
+.grid {
+  display: grid;
+  grid-gap: var(--grid-space);
+}
+
+@supports (width: min(var(--grid-min, 250px), 100%)) {
+  .grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(var(--grid-min, 250px), 100%), 1fr)
+    );
+  }
+}

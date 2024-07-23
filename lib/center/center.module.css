@@ -1,0 +1,14 @@
+.center {
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-inline-size: var(--center-max);
+  padding-inline-start: var(--center-gutters, 0);
+  padding-inline-end: var(--center-gutters, 0);
+  text-align: var(--center-text-align);
+}
+
+.intrinsic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
